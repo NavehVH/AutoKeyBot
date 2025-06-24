@@ -41,7 +41,7 @@ With access to real-time game data, you can create complex behaviors triggered b
 
 ---
 
-## ## Bot Management & Monitoring
+## Bot Management & Monitoring
 
 Each botting instance can be saved to an MSSQL database, ensuring that your information, code, and settings are preserved across sessions.
 
