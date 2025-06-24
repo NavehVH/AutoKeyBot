@@ -1,16 +1,32 @@
 # AutoKeyBot
 
-**AutoKeyBot** is a lightweight Windows Forms-based macro bot for automating keyboard and mouse actions.  
-Designed for repetitive gameplay scenarios, testing, or workflow automation.
+**AutoKeyBot** is a Windows Forms application written in C# that automates gameplay based on user-defined logic. It offers two primary modes of operation:
+
+### Regular Bot Mode
+Configure how the player behaves in response to in-game events using an intuitive UI with built-in features.
+
+### Script Bot Mode
+Write and compile your own custom code using the provided **Botting API**, allowing for more flexible and high-performance behavior based on game data.
 
 ---
 
-## Features
-- Record and play back keyboard/mouse macros
-- Timed loops and configurable delays
-- Global hotkey activation
-- Per-profile settings and presets
-- Minimalistic UI with live feedback
+## How It Works
+
+AutoKeyBot simulates keystrokes using the Windows API to control the player in-game. It gathers in-game information by analyzing pixel data from the screen, enabling it to detect:
+
+- Player position  
+- Presence of other players on the map  
+- Health levels  
+- Additional in-game status
+
+All components run concurrently using multithreading, enabling smooth and responsive automation.
+
+With access to real-time game data, you can create complex behaviors triggered by conditions such as:
+
+- Player position  
+- Time-based events  
+- Health thresholds  
+- Any custom condition you define
 
 ---
 
