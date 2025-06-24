@@ -14,7 +14,7 @@ It pushed me to find solutions independently (pre-AI days) and shaped how I appr
 </p>
 
 ### Script Bot Mode
-Write and compile your own custom code using the provided **Botting API**, allowing for more flexible and high-performance behavior based on game data.
+Write and compile your own custom code using the provided **Botting API** I've built, allowing for more flexible and high-performance behavior based on game data.
 
 ### Regular Bot Mode
 Configure how the player behaves in response to in-game events using an intuitive UI with built-in features.
