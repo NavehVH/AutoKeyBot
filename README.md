@@ -1,6 +1,17 @@
-# AutoKeyBot
+## About This Project
 
+This is one of the most fun and rewarding projects I built around 2020, before starting my degree. I constantly added new features based on my imagination and learned a lot along the way — from fixing bugs on my own, handling a growing codebase, learning unfamiliar concepts like UI handling, multithreading, and even embedding a compiler.
+
+It pushed me to find solutions independently (pre-AI days) and shaped how I approach challenges in programming today.
+
+---
+
+# AutoKeyBot
 **AutoKeyBot** is a Windows Forms application written in C# that automates gameplay based on user-defined logic. It offers two primary modes of operation:
+
+<p align="center">
+  <img src="https://i.imgur.com/4g3UjLV.jpeg" alt="Alt text" width="500"/>
+</p>
 
 ### Script Bot Mode
 Write and compile your own custom code using the provided **Botting API**, allowing for more flexible and high-performance behavior based on game data.
@@ -38,7 +49,8 @@ A built-in debug console is available to help you test and troubleshoot your cus
 
 The application includes a dedicated UI window that displays real-time data about the bot and the player. This makes it easier to customize and monitor the bot’s behavior.
 
-*(Insert bot UI screenshot here)*
+![image](https://github.com/user-attachments/assets/f7f0dce5-02d7-484a-a49f-67bbb2259c07)
+
 
 ---
 
@@ -46,7 +58,7 @@ The application includes a dedicated UI window that displays real-time data abou
 
 The Script Bot Mode provides access to a custom API via an included DLL, which exposes methods to control the player and retrieve live gameplay data.
 
-*(Insert API methods image here)*
+![Image](https://i.imgur.com/hVVNMQE.jpeg)
 
 You can also define **"Timer" events** — sequences of keystrokes that are executed automatically at specified intervals while the script bot is active.
 
@@ -54,7 +66,7 @@ All user-written code is placed inside a provided `Main()` method. When the bot 
 
 You can start or pause the bot at any time through the application interface.
 
-*(Insert script code GIF/example here)*
+![Alt text](https://i.imgur.com/9mi7Dx9.gif)
 
 ---
 
@@ -62,7 +74,7 @@ You can start or pause the bot at any time through the application interface.
 
 This mode allows you to create a bot **without writing any code**. You define a table of keystroke inputs along with the duration each input should be held. The bot will execute this sequence in an endless loop until it is paused or stopped.
 
-*(Insert main key table image here)*
+![Image](https://i.imgur.com/v62LvkJ.jpeg)
 
 To enhance customization, Regular Bot Mode includes a feature called **Events**. Events allow you to define conditions that, when met in-game, trigger an alternative sequence of actions (a different input table) while the event is active.
 
@@ -73,7 +85,8 @@ Supported event types include:
 - **Player Health** – Triggers if the player's health drops below a defined threshold
 - **Timer Event** – Triggers every X seconds
 
-*(Insert event example images here)*
+Example of Player Position Event UI:
+![Image](https://i.imgur.com/L6eHlgh.jpeg)
 
 All features work seamlessly together, allowing you to define complex behaviors and precisely control how your player reacts to in-game situations.
 
@@ -88,7 +101,7 @@ The botting session includes its own configurable settings, allowing for persona
 - Automatically move the bot window to the top-left corner of the screen when it starts
 - Choose how the Regular Bot should behave when the player moves out of a defined range (e.g., stop current actions, trigger a fallback event, etc.)
 
-*(Insert botting session settings image here)*
+![Image](https://i.imgur.com/ELnBoJd.jpeg)
 
 ---
 
