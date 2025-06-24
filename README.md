@@ -30,6 +30,34 @@ With access to real-time game data, you can create complex behaviors triggered b
 
 ---
 
+## Botting
+
+Each botting instance can be saved to an MSSQL database, ensuring that your information, code, and settings are preserved across sessions.
+
+A built-in debug console is available to help you test and troubleshoot your custom code. The provided API includes methods for interacting with the debug tools directly.
+
+The application includes a dedicated UI window that displays real-time data about the bot and the player. This makes it easier to customize and monitor the bot’s behavior.
+
+*(Insert bot UI screenshot here)*
+
+---
+
+## Script Bot Mode
+
+The Script Bot Mode provides access to a custom API with methods that allow you to control the player and retrieve live data during gameplay.
+
+*(Insert API methods image here)*
+
+You can also define **"Timer" events** — sequences of keystrokes that are executed automatically at specified intervals while the script bot is active.
+
+All user-written code is placed inside a provided `Main()` method. When the bot runs, this method is executed in a continuous loop, enabling persistent logic and automation.
+
+You can start or pause the bot at any time through the application interface.
+
+*(Insert script code GIF/example here)*
+
+---
+
 ## Technologies Used
 - C#
 - WinForms (.NET)
