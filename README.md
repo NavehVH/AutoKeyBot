@@ -2,11 +2,11 @@
 
 **AutoKeyBot** is a Windows Forms application written in C# that automates gameplay based on user-defined logic. It offers two primary modes of operation:
 
-### Regular Bot Mode
-Configure how the player behaves in response to in-game events using an intuitive UI with built-in features.
-
 ### Script Bot Mode
 Write and compile your own custom code using the provided **Botting API**, allowing for more flexible and high-performance behavior based on game data.
+
+### Regular Bot Mode
+Configure how the player behaves in response to in-game events using an intuitive UI with built-in features.
 
 ---
 
@@ -30,7 +30,7 @@ With access to real-time game data, you can create complex behaviors triggered b
 
 ---
 
-## Botting
+## ## Bot Management & Monitoring
 
 Each botting instance can be saved to an MSSQL database, ensuring that your information, code, and settings are preserved across sessions.
 
@@ -44,7 +44,7 @@ The application includes a dedicated UI window that displays real-time data abou
 
 ## Script Bot Mode
 
-The Script Bot Mode provides access to a custom API with methods that allow you to control the player and retrieve live data during gameplay.
+The Script Bot Mode provides access to a custom API via an included DLL, which exposes methods to control the player and retrieve live gameplay data.
 
 *(Insert API methods image here)*
 
@@ -55,6 +55,49 @@ All user-written code is placed inside a provided `Main()` method. When the bot 
 You can start or pause the bot at any time through the application interface.
 
 *(Insert script code GIF/example here)*
+
+---
+
+## Regular Bot Mode
+
+This mode allows you to create a bot **without writing any code**. You define a table of keystroke inputs along with the duration each input should be held. The bot will execute this sequence in an endless loop until it is paused or stopped.
+
+*(Insert main key table image here)*
+
+To enhance customization, Regular Bot Mode includes a feature called **Events**. Events allow you to define conditions that, when met in-game, trigger an alternative sequence of actions (a different input table) while the event is active.
+
+Supported event types include:
+
+- **Player Position** – Triggers if the player is within a specific range on the map
+- **Other Player in Map** – Triggers if another player is detected nearby
+- **Player Health** – Triggers if the player's health drops below a defined threshold
+- **Timer Event** – Triggers every X seconds
+
+*(Insert event example images here)*
+
+All features work seamlessly together, allowing you to define complex behaviors and precisely control how your player reacts to in-game situations.
+
+---
+
+## Botting Session Settings
+
+The botting session includes its own configurable settings, allowing for personalized and responsive automation. You can:
+
+- Enable a notification sound when another player appears on the map
+- Enable a notification sound after a specified amount of time has passed since the bot started
+- Automatically move the bot window to the top-left corner of the screen when it starts
+- Choose how the Regular Bot should behave when the player moves out of a defined range (e.g., stop current actions, trigger a fallback event, etc.)
+
+*(Insert botting session settings image here)*
+
+---
+
+## Extra Features and Functionality
+
+- Full ability to **save, edit, and delete** all bots, settings, and configurations
+- **Responsive UI** that remains functional and interactive while the bot is running
+- Option to **manually define screen coordinates** for reading player position and health via pixel data
+- UI layout is **responsive to different screen sizes** and resolutions for a smooth user experience
 
 ---
 
